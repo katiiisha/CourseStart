@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 
@@ -69,12 +70,102 @@
         </button>
       </div>
       <!-- получаемые навыки -->
-      <div class="skills">
+      <div class="display_2">
+        <div class="d1">
         <h2 class="font_h2">
           Как Вы считаете, сможете ли Вы стать data scientist за 12 часов, освоив эти 6 навыков?
         </h2>
+
+        <div class="skills">
+          <div class="skill">
+            <span class="font_h1cover">01</span>
+             <img src="img/skill1.svg" alt="/">
+            <p>Обработка данных и извлечение признаков</p>
+          </div>
+          <div class="skill">
+            <span class="font_h1cover">02</span>
+            <img src="img/skill2.svg" alt="/">
+            <p>Классификация</p>
+          </div>
+          <div class="skill">
+            <span class="font_h1cover">03</span>
+            <img src="img/skill3.svg" alt="/">
+            <p>Кластеризация</p>
+          </div>
+        </div>
+        <div class="skills">
+           <div class="skill">
+            <span class="font_h1cover">04</span>
+             <img src="img/skill4.svg" alt="/">
+            <p>Построение регрессионных моделей</p>
+          </div>
+          <div class="skill">
+            <span class="font_h1cover">05</span>
+            <img src="img/skill5.svg" alt="/">
+            <p>Ранжирование</p>
+          </div>
+          <div class="skill">
+            <span class="font_h1cover">06</span>
+            <img src="img/skill6.svg" alt="/">
+            <p>Сокращение размерности</p>
+          </div>
+        </div>
+        </div>
+        <div class="vacancy">
+          <h1 class="font_h1cover">
+            Вакансии data scientist
+          </h1>
+              <div class="swiper mySwiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                      <img src="img/hh.svg" alt="">
+                      <p>Data Scientist</p>
+                      <p>до 300 000 руб.</p>
+                      <img src="img/media.png" alt="">
+                    </div>
+                    <div class="swiper-slide slide1">
+                      <img src="img/hh.svg" alt="/" class="hh">
+                      <p>Data scientist /Project manager</p>
+                      <p>до 400 000 руб.</p>
+                      <img src="img/drunel.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/hh.svg" alt="">
+                      <p>Руководитель направления</p>
+                      <p>от 200 000 руб.</p>
+                      <img src="img/sber.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/hh.svg" alt="">
+                      <p>Специалист <br> Big data</p>
+                      <p>от 300 000 руб.</p>
+                      <img src="img/island.png" alt="/">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/hh.svg" alt="">
+                      <p>Data Scientist</p>
+                      <p>до 300 000 руб.</p>
+                      <img src="img/media.png" alt="">
+                    </div>
+                    <div class="swiper-slide slide1">
+                      <img src="img/hh.svg" alt="/" class="hh">
+                      <p>Data scientist /Project manager</p>
+                      <p>до 400 000 руб.</p>
+                      <img src="img/drunel.png" alt="">
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+              </div>
+         </div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

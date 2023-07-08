@@ -237,16 +237,11 @@ body{
     padding: 0;
     margin: 0;
 }
+/* общие стили для текста  */
 .font_h1 {
     font-size: 48px;
     font-weight: 800;
     letter-spacing: -0.48px;
-}
-.font_h3 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 146.28%;
-    letter-spacing: -0.24px;
 }
 .font_h2 {
     font-size: 34px;
@@ -254,13 +249,25 @@ body{
     line-height: 146.28%;
     letter-spacing: -0.34px;
 }
+.font_h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 146.28%;
+    letter-spacing: -0.24px;
+}
+.font_h1cover {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: -1.92px;
+}
+
  .main {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
     
  }
-
+ /* шапка сайта */
 header {
     justify-content: space-between;
     display: flex;
@@ -361,11 +368,115 @@ header {
     background: #F5FA72;
 }
 
-/* получаемые навыки */
-.skills {
-    padding-left: 257px;
-    padding-right: 217px;
+/* 1 раздел: получаемые навыки */
+.display_2 {
     padding-top: 41px;
+    margin-bottom: 500px;
+}
+.d1 {
+     padding-left: 257px;
+    padding-right: 217px;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+.skill > span {
+    color: rgba(254, 180, 71, 0.10);
+    /* font-size: 96px;
+    font-weight: 900;
+    letter-spacing: -1.92px; */
+    position: absolute;
+}
+.skill > img {
+    width: 40px;
+    height: 32px;
+    margin-top: 10px;
+}
+.skill > p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    margin: 0;
+    margin-top: 23px;
+    width: 210px;
+}
+.vacancy {
+    background-image: url(../img/bg2.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 573px;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+.vacancy > h1 {
+    color: #C81F56;
+    opacity: 0.10000000149011612;
+    margin: 0;
+    padding-left: 30px;
+}
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 
- 
+.swiper-button-prev::after, .swiper-button-next::after {
+    color: rgba(200, 31, 86, 0.10);
+   font-weight: 900;
+}
+.swiper-pagination {
+   bottom: 0; 
+   padding-top: 100px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #FE840E;
+    width: 8px;
+    height: 8px;
+}
+
+.swiper-slide {
+    width: 216px;
+    height: 287px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.10);
+    padding: 18px;
+}
+
+.swiper-slide > p {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+}
+.swiper-slide > p+p {
+    color: var(--4, #C81F56);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+    margin-top: 23px;
+}
+.mySwiper {
+    width: 100%;
+    height: 385px;
+}
+
+.swiper-slide  {
+    opacity: 0.33;
+}
+ .swiper-slide-prev, .swiper-slide-active, .swiper-slide-next, .swiper-slide + .swiper-slide {
+    opacity: 1;
+
+}
+.swiper-slide-next + .swiper-slide {
+    opacity: 0.33;
+}
